@@ -3,6 +3,8 @@ package org.devsfree.apiemprestimo.service;
 import java.math.BigDecimal;
 
 public class EmprestimoFactory {
+    
+    //Gostei bastante dos métodos, estão expressando a intenção do mesmo e tem uma única responsabilidade. TOP!!
     public static boolean verificaSalarioAbaixoDeTresMil(BigDecimal bigDecimal) {
         return bigDecimal.compareTo(new BigDecimal(3000)) <= 0 &&
                 bigDecimal.compareTo(new BigDecimal(0)) >= 0;
@@ -24,6 +26,7 @@ public class EmprestimoFactory {
         return bigDecimal.compareTo(new BigDecimal(5000)) >= 0;
     }
 
+    //Por que a age foi representa como byte ?
     public static boolean verificarSeClienteTemMenosDeTrintaAnos(Byte age) {
         return age < 30 && age > 17;
     }
