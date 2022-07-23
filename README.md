@@ -1,5 +1,6 @@
 # Challenge DevsFree #4
 
+#Por que na execuçao via postman temos dois empréstimos de consignado ??
 - REST API para Emprestimo Bancário
 
 ## Stack
